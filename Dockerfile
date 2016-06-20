@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.3
+FROM gliderlabs/alpine:3.4
 MAINTAINER Pete Colapietro <pcssi@users.noreply.github.com>
 
 RUN apk --update add \ 
