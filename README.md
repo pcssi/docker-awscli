@@ -21,28 +21,6 @@ core@n1 git clone https://github.com/xueshanf/docker-awscli.git
 core@n1 docker build -t xueshanf/awscli:latest .
 ```
 
-Ready-made tools:
-
-```
-core@n1 docker run --rm  xueshanf/awscli get-metadata help
-Usage: get-metadata <argument>
-ACCOUNT
-HOSTNAME
-INSTANCEID
-PRIVATEIP
-PUBLICIP
-ROLE
-STSCRED
-STSTOKEN
-STSKEY
-SECRET
-ZONE
-
-core@n1 docker run --rm  xueshanf/awscli get-metadata instanceid
-i-453266b2
-```
-Command line argument is not case sensitve. 
-
 Copy data from s3 bucket to local file system:
 
 ```
