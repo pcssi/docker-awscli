@@ -8,7 +8,6 @@ To check AWS cli version
 
 ```
 docker run --rm  xueshanf/awscli aws --version
-docker run --rm  xueshanf/awscli s3cmd --version 
 ```
 
 Examples
