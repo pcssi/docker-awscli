@@ -2,12 +2,12 @@ Docker awscli
 =============
 
 An AWS CLI toolbox in container. See Dockerfile.
-This repo triggers auto-build and push images to dockerhub.com/u/xueshanf/awscli.
+This repo triggers auto-build and push images to dockerhub.com/u/pcssi/awscli.
 
 To check AWS cli version
 
 ```
-docker run --rm  xueshanf/awscli aws --version
+docker run --rm  pcssi/awscli aws --version
 ```
 
 Examples
@@ -16,14 +16,14 @@ Examples
 Rebuild image. This will upgrade the package too:
 
 ```
-core@n1 git clone https://github.com/xueshanf/docker-awscli.git
-core@n1 docker build -t xueshanf/awscli:latest .
+core@n1 git clone https://github.com/pcssi/docker-awscli.git
+core@n1 docker build -t pcssi/awscli:latest .
 ```
 
 Copy data from s3 bucket to local file system:
 
 ```
-core@n1 /usr/bin/docker run --rm -v /var/apps:/apps xueshanf/awscli:latest aws s3 cp s3://<bucket>/apps/nginx/ /apps/nginx
+core@n1 /usr/bin/docker run --rm -v /var/apps:/apps pcssi/awscli:latest aws s3 cp s3://<bucket>/apps/nginx/ /apps/nginx
 ```
 
 Register an AWS instance with a load balancer.
@@ -40,7 +40,7 @@ AWS_DEFAULT_REGION=us-west-2
 #!/bin/bash
 AWS_CONFIG_ENV=/root/.aws/envvars
 INSTANCE=$(/usr/bin/curl -s http://169.254.169.254/latest/meta-data/instance-id)
-IMAGE=xueshanf/awscli:latest
+IMAGE=pcssi/awscli:latest
 
 CMD="aws elb register-instances-with-load-balancer \
     --load-balancer-name <elb name> --instances $INSTANCE "
