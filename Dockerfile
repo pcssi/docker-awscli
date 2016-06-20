@@ -1,5 +1,5 @@
 FROM gliderlabs/alpine:3.3
-MAINTAINER Xueshan Feng <sfeng@stanford.edu>
+MAINTAINER Pete Colapietro <pcssi@users.noreply.github.com>
 
 RUN apk --update add \ 
       python \
