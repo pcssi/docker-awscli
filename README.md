@@ -2,7 +2,7 @@ Docker awscli
 =============
 
 An AWS CLI toolbox in container. See Dockerfile.
-This repo triggers auto-build and push images to dockerhub.com/u/pcssi/awscli.
+This repo triggers auto-build and push images to https://hub.docker.com/r/pcssi/awscli/.
 
 To check AWS cli version
 
