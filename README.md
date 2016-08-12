@@ -6,8 +6,12 @@ This repo triggers auto-build and push images to dockerhub.com/u/pcssi/awscli.
 
 To check AWS cli version
 
-```
+```shell
 docker run --rm  pcssi/awscli aws --version
+```
+
+```shell
+aws-cli/1.10.56 Python/2.7.12 Linux/4.4.14-moby botocore/1.4.46
 ```
 
 Examples
