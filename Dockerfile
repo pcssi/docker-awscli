@@ -5,7 +5,8 @@ RUN apk --update add \
       python \
       py-pip && \
       pip install --upgrade pip awscli && \
-      mkdir /root/.aws
+      mkdir /root/.aws && \
+      aws configure set preview.cloudfront true
 
 # Expose data volume
 VOLUME /apps
