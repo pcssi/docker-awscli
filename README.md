@@ -11,7 +11,7 @@ docker run --rm  pcssi/awscli aws --version
 ```
 
 ```shell
-aws-cli/1.10.56 Python/2.7.12 Linux/4.4.14-moby botocore/1.4.46
+aws-cli/1.10.57 Python/2.7.12 Linux/4.4.14-moby botocore/1.4.47
 ```
 
 Examples
